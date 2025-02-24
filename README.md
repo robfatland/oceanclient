@@ -16,5 +16,13 @@ git clone https://github.com/robfatland/oceanclient
 
 This will create a folder `oceanclient` containing a Jupyter notebook `sensors.ipynb` and a 
 Python code library file `oceanclient.py`. Start up the `jupyter lab` and run the first cell
-in the `sensors.ipynb` notebook. This should produce a data chart and return two pandas Dataframes
-in about ten seconds. 
+in the `sensors.ipynb` notebook. The code in this cell is pretty simple, something like
+
+
+```
+import oceanclient as oc
+dfT, dfS = oc.Chart('2022-01-05', 9)
+```
+
+
+This should produce a data chart and return two pandas Dataframes in about ten seconds. 
